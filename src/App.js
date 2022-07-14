@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import PostList from './Posts/postList';
+import Nav from './Navbar/nav';
+import Enviromental from './Enviromental/enviroment';
+import Governance from './Governance/governance';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import { Route } from 'react-router-dom';
+// import { Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav/>
+      <PostList/>
+      <Enviromental/>
+      <Governance/>
     </div>
   );
 }
